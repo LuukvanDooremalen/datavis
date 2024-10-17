@@ -5,54 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trucks Around the Earth</title>
+    <title>De Afval Race</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xns4yet.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-
+    <img id="titel" src="assets/titel.svg" alt="titel">
+    <img id="lijn1" class="lijnen" src="assets/lijn1.svg" alt="">
+    <img id="lijn2" class="lijnen" src="assets/lijn2.svg" alt="">
+    <img id="lijn3" class="lijnen" src="assets/lijn3.svg" alt="">
+    <img id="lijn4" class="lijnen" src="assets/lijn4.svg" alt="">
     <div id="svg-container"></div> <!-- Hier worden SVG's toegevoegd -->
-
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script>
-            const svgContainer = d3.select("#svg-container")
-            .append("svg")
-            .attr("width", 800)  
-            .attr("height", 600);  
+    <script src="json.js"></script>
+    <script src="script.js"></script>
 
-        svgContainer.append("image")
-            .attr("xlink:href", "assets/aarde.svg")  
-            .attr("x", 300)  
-            .attr("y", 200)
-            .attr("width", 200) 
-            .attr("height", 200);
-
-        svgContainer.append("image")
-            .attr("xlink:href", "assets/truckoranje.svg")  
-            .attr("x", 300)  
-            .attr("y", 200)
-            .attr("transform", "rotate(180,400,300) rotate(-75,350,250) ")
-            .attr("width", 50)  
-            .attr("height", 50);
-
-        svgContainer.append("image")
-            .attr("xlink:href", "assets/truckgroen.svg")  
-            .attr("x", 300)  
-            .attr("y", 200)  
-            .attr("transform", "rotate(260,400,300) rotate(-75,350,250) ")
-            .attr("width", 50)
-            .attr("height", 50);
-
-        
-        svgContainer.append("image")
-            .attr("xlink:href", "assets/truckblauw.svg")  
-            .attr("x", 300)  
-            .attr("y", 200)  
-            .attr("transform", "rotate(80,400,300) rotate(-75,350,250) ")
-            .attr("width", 50)
-            .attr("height", 50);
-
-    </script>
 </body>
 
 </html>
